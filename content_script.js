@@ -19,7 +19,9 @@ var answers = {
     "ApacheCon EU 2000 was hosted in which city?": "London",
     "ApacheCon US 2000 was hosted in which city?": "Orlando",
     "What color is the sky (usually)?": "Blue",
-    "What\'s the opposite of open?": "Closed"
+    "What\'s the opposite of open?": "Closed",
+    "Is the ASF a 501(c)3 public charity?": "yes",
+    "What US state did the ASF incorporate in?", "Delaware"
 };
 
 var question = document.getElementById('textcha-question').innerText;
