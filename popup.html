@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <style>
+            body 
+            { 
+                min-width: 420px; 
+                overflow-x: hidden; 
+                font-family: Arial, sans-serif; 
+                font-size: 12px; 
+            }
+            input, textarea { width: 420px; }
+            input#save { font-weight: bold; width: auto; }
+        </style>
+        <script>
+            // Call the background page to fill in the answer.
+            window.onload = function() 
+            { 
+                var bg = chrome.extension.getBackgroundPage();
+                bg.answer();
+            }
+            var loadGit = function() {
+            	chrome.tabs.create({'url': 'https://github.com/macdonst/Remember-Apache-Answers'}, function(tab) {
+    				// Tab opened.
+				});
+            }
+        </script>
+    </head>
+    <body>
+    	<p>If this extension can't answer the question you should do a pull request on with the answer to the GitHub repo.</p>
+    	<a href="#" onclick="loadGit()">Remember-Apache-Answers</a>
+    	<p>And submit the answer to the question or correct a bug</p>
+    </body>
+</html>

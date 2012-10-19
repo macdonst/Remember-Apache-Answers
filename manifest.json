@@ -1,0 +1,16 @@
+{
+    "name": "Remember Apache Answers",
+    "description": "Remembers answers to Apache Wiki CATCHPA for you",
+    "version": "1.0",
+    "background_page": "background.html",
+    "permissions": [
+        "tabs", 
+        "http://*/*", 
+        "https://*/*"
+    ],
+    "browser_action": {
+        "default_title": "Answer the wiki",
+        "default_icon": "icon.png",
+        "popup": "popup.html"
+    }
+}
